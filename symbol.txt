@@ -1,0 +1,94 @@
+#Right triangle
+n=int(input())
+for i in range(1,n+1):
+	print('*'*i)
+
+
+#Mirrored Right Triangle
+n=int(input())
+for i in range(1,n+1):
+	print(' '*(n-i),'*'*i)
+
+
+#Inverted Right Triangle
+n=int(input())
+for i in range(n,0,-1):
+	print('*'*i)
+
+
+#Inverted Mirrored Right Triangle
+n=int(input())
+for i in range(n,0,-1):
+	print(' '*(n-i),'*'*i)
+
+
+#Hollow Right Triangle
+n=int(input())
+for i in range(1,n+1):
+	for j in range(1,i+1):
+		if i==j or j==1 or i==n:
+			print('*',end=' ')
+		else:
+		  print(' ',end=' ')
+	print()
+
+
+
+
+#hollow mirrored right triangle 
+n=int(input())
+for i in range(1,n+1):
+	for j in range(i,n+1):
+		print(' ')
+	for j in range(1,i+1):
+		if i==j or j==1 or i==n:
+			print('*',end=' ')
+		else:
+		  print(' ',end=' ')
+	print()
+
+
+
+#pyramid
+n=int(input())
+k=1
+for i in range(1,n+1):
+	print(' '*(n-i),'*'*k)
+	k+=2
+
+
+#inverted pyramid
+n=int(input())
+k=0
+for i in range(n,0,-1):
+	print(' '*k,'*'*(2*i-1))
+	k+=1
+
+
+
+#Diamond
+n=int(input())
+k=1
+for i in range(1,n+1):
+	print(' '*(n-i),'*'*k)
+	k+=2
+k=0
+for i in range(n,0,-1):
+	print(' '*k,'*'*(2*i-1))
+	k+=1
+
+
+
+
+#Hollow Diamond
+n=int(input())
+k=1
+for i in range(1,n+1):
+	print('*'*(n-i),' '*k,'*'*(n-i))
+	k+=2
+k=0
+for i in range(n,0,-1):
+	print('*'*k,' '*(2*i-1),'*'*k)
+	k+=1
+
+
